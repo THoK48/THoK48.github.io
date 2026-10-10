@@ -1,0 +1,3 @@
+{% if site.ads.enabled and site.ads.publisher_id != '' %}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.ads.publisher_id | escape }}" crossorigin="anonymous"></script>
+{% endif %}

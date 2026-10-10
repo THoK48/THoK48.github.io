@@ -1,0 +1,2 @@
+{% if page.collection == 'posts' and site.ads.bottom_enabled %}{% include ads/unit.html slot=site.ads.bottom_slot position="bottom" %}{% endif %}
+<p class="site-links"><a href="{{ '/privacy/' | relative_url }}">개인정보처리방침</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>

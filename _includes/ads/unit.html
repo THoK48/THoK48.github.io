@@ -1,0 +1,10 @@
+{% assign slot_id = include.slot %}
+{% if site.ads.enabled and site.ads.publisher_id != '' and slot_id != '' %}
+<div class="ad-unit ad-unit--{{ include.position }}" aria-label="광고">
+  <span class="ad-unit__label">광고</span>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="{{ site.ads.publisher_id | escape }}" data-ad-slot="{{ slot_id | escape }}" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+{% endif %}

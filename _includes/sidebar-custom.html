@@ -1,0 +1,11 @@
+{% if site.ads.sidebar_enabled and site.ads.enabled and site.ads.publisher_id != '' and site.ads.sidebar_slot != '' %}
+<div class="ad-unit ad-unit--sidebar" aria-label="광고">
+  <span class="ad-unit__label">광고</span>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="{{ site.ads.publisher_id | escape }}" data-ad-slot="{{ site.ads.sidebar_slot | escape }}" data-ad-format="auto"></ins>
+  <script>
+    if (window.matchMedia('(min-width: 64em)').matches) {
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    }
+  </script>
+</div>
+{% endif %}

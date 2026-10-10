@@ -1,0 +1,42 @@
+---
+---
+
+@charset "utf-8";
+$sans-serif: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$global-font-family: $sans-serif;
+$header-font-family: $sans-serif;
+$intro-transition: none;
+$global-transition: none;
+$link-color: #8ab8ff;
+
+@import "minimal-mistakes/skins/dark";
+@import "minimal-mistakes";
+
+html { font-size: 17px; }
+body { font-family: $sans-serif; word-break: keep-all; }
+.page__content { font-size: 1rem; line-height: 1.85; max-width: 74ch; }
+.page__content p, .page__content li { overflow-wrap: anywhere; }
+.page__content h2 { margin-top: 2.2em; padding-bottom: .25em; border-bottom: 1px solid #39414c; }
+.page__content h3 { margin-top: 1.7em; }
+.page__title { letter-spacing: -.025em; line-height: 1.35; }
+.archive__item-title { line-height: 1.45; }
+.page__content pre, .page__content .highlight { border-radius: .5rem; }
+.page__content pre { padding: 1.1rem; overflow-x: auto; }
+.page__content code { font-size: .91em; }
+.page__content table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; }
+.page__content th, .page__content td { min-width: 6rem; padding: .65rem .8rem; border: 1px solid #39414c; }
+.page__content th { background: #252c35; }
+.page__content img { height: auto; max-width: 100%; border-radius: .35rem; }
+.toc { font-size: .86rem; }
+.site-links { font-size: .8rem; margin: .4rem 0; }
+.ad-unit { clear: both; margin: 2rem 0; }
+.ad-unit__label { display: block; margin-bottom: .35rem; font-size: .7rem; color: #a5aab2; }
+.ad-unit--sidebar { margin-top: 2rem; }
+@media (max-width: 63.99em) {
+  .ad-unit--sidebar { display: none; }
+}
+@media (max-width: 40em) {
+  html { font-size: 16px; }
+  .page__content { line-height: 1.78; }
+  .page__title { font-size: 1.75rem; }
+}

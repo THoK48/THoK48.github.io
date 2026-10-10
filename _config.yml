@@ -1,0 +1,90 @@
+title: "기술 기록"
+description: "공부 과정과 개발 경험을 차곡차곡 기록하는 기술 블로그"
+locale: "ko-KR"
+timezone: "Asia/Seoul"
+url: "https://thok48.github.io"
+baseurl: "https://thok48.github.io"
+repository: "THoK48/THoK48.github.io"
+
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: dark
+markdown: kramdown
+highlighter: rouge
+permalink: /posts/:title/
+breadcrumbs: false
+search: true
+search_provider: lunr
+lunr:
+  search_within_pages: true
+
+github_username: "THoK48"
+
+author:
+  name: "THoK"
+  avatar: "https://github.com/THoK48.png"
+  bio: "hi"
+  home: "https://github.com/THoK48"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/THoK48"
+
+footer:
+  links: []
+
+social:
+  name: "THoK"
+  links:
+    - "https://github.com/THoK48"
+
+ads:
+  enabled: false
+  publisher_id: ""
+  article_slot: ""
+  sidebar_slot: ""
+  bottom_slot: ""
+  article_enabled: false
+  sidebar_enabled: false
+  bottom_enabled: false
+
+include:
+  - _pages
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - _config_deploy.yml
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      toc: true
+      toc_sticky: true
+      toc_label: "목차"
+      share: false
+      related: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
